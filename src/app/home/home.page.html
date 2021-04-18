@@ -1,20 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-card class="ion-text-center">
+  <ion-card-subtitle>Dados Abertos</ion-card-subtitle>
+  <ion-card-title color="primary">
+    Câmara dos Deputados
+    </ion-card-title>
+  <img src="assets/camara.jpg" width="350px" height="200px"/>
+  <ion-card-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-button (click)="btnClicked()">Exibir Deputados</ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  </ion-card-content>
+</ion-card>

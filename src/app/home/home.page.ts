@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  titulo = 'Câmara dos Deputados';
+
+  constructor(
+    public navCtrl: NavController,
+    private router: Router) {
+  }
+
+  btnClicked() {
+    console.log("btn Clicked");
+    this.router.navigate(['lista-deputado'])
+  }
 
 }
